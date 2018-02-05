@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Resume</title>
+    <link rel="icon" type="image/x-icon" href="triforce_icon.ico"/>
+    <script src="jquery-3.3.1.min.js"></script>
+  </head>
+  <style>
+    body {
+      margin: 30px;
+      color: rgb(255,255,255);
+      height: 100%;
+    }
+    .back {
+      color: rgb(220,220,255);
+      margin: 15px;
+    }
+    h3 {
+      display: inline;
+    }
+    .header {
+      padding-top: 20px;
+      color: rgb(200,200,255);
+    }
+    .background {
+      background: url("cityNightResized.jpg");
+      background-size: cover;
+    }
+    iframe {
+      margin: 0 auto;
+      display:block;
+    }
+    #centeredHeaders {
+      text-align: center;
+    }
+  </style>
+  <body class="background">
+    <h1 class="header" align="center">Resume</h1>
+    <div id="centeredHeaders">
+      <h3><a href="index.html" class="back">Back to Main Page</a></h3>
+      <h3><a href="workExperience.html" class="back">Work Experience</a></h3>
+    </div>
+    <p><br></p>
+    <div id="content">
+      <iframe src="resume.pdf" align="center" width="80%" height=700px></iframe>
+    </div>
+  </body>
+</html>
