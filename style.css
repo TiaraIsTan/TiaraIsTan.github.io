@@ -53,11 +53,11 @@ a {
   font-size: 12pt;
 }
 .linkImage {
-  float:left;
+  float: left;
   padding-right: 20px;
 }
 .resumeLinks {
-  display: inline;
+  display: inline-block;
   margin: 15px;
 }
 .list {
@@ -93,5 +93,5 @@ a {
   text-align: left;
 }
 #centeredHeaders {
-      text-align: center;
+  text-align: center;
 }
