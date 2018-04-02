@@ -1,0 +1,98 @@
+body {
+  text-align: center;
+  color: rgb(255,255,255);
+}
+p {
+  font-family: 'Nova Flat', cursive;
+}
+ul {
+  font-family: 'Nova Flat', cursive;
+  list-style: square;
+  font-size: 16pt;
+}
+li {
+  font-family: 'Nova Flat', cursive;
+  font-size: 12pt;
+}
+iframe {
+  margin: 0 auto;
+  display:block;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  color: rgb(200,200,255);
+  font-family: 'Russo One', sans-serif;
+  font-size: 40pt;
+  display: inline-block;
+  padding: 16px 0px 0px 0px;
+}
+.white {
+  color: rgb(255,255,255);
+}
+.header2 {
+  color: rgb(255,255,255);
+  font-family: 'Nova Flat', cursive;
+  text-decoration: none;
+  font-size: 16pt;
+}
+.largelink {
+  color: rgb(0,168,225);
+  font-family: 'Nova Flat', cursive;
+  text-decoration: none;
+  font-size: 24pt;
+  text-align: center;
+  padding: 20px 0px 0px 0px;
+  display: inline-block;
+}
+.linkcolor {
+  color: rgb(255,255,255);
+  font-family: 'Nova Flat', cursive;
+  text-decoration: underline;
+  font-size: 12pt;
+}
+.linkImage {
+  float: left;
+  padding-right: 20px;
+}
+.resumeLinks {
+  display: inline-block;
+  margin: 15px;
+}
+.list {
+  color: rgb(30,198,255);
+}
+.background {
+  background-size: cover;
+  min-height: 100%;
+}
+.bg1 {
+  background: url("cityNightResized.jpg");
+}
+.bg2 {
+  background: url("cherryBlossom.jpg");
+}
+.bg3 {
+  background: url("brightSkyResized.png");
+}
+.back {
+    font-family: 'Nova Flat', cursive;
+    text-decoration: none;
+    font-size: 16pt;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+.gray {
+    color: rgb(50,50,50);
+}
+#content {
+  padding-left: 30px;
+  color: rgb(255,255,255);
+}
+#left {
+  text-align: left;
+}
+#centeredHeaders {
+  text-align: center;
+}
