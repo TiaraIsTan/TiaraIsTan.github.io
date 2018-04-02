@@ -26,7 +26,7 @@ a {
   font-family: 'Russo One', sans-serif;
   font-size: 40pt;
   display: inline-block;
-  padding: 16px 0px 0px 0px;
+  padding-top: 16px;
 }
 .white {
   color: rgb(255,255,255);
@@ -93,7 +93,8 @@ a {
   padding-right: 5%;
 }
 #content {
-  padding-left: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
   color: rgb(255,255,255);
 }
 #left {
