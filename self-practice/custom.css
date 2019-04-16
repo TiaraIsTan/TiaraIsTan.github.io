@@ -1,0 +1,29 @@
+.smol {
+	height: 100px;
+}
+
+.med {
+	height: 200px;
+}
+
+.larg {
+	height: 300px;
+}
+
+.border {
+	height: 400px;
+}
+
+.glow {
+	border-width: 16px;
+	border-style: solid;
+	border-image: linear-gradient(white, aqua) 4;
+}
+
+.halo {
+	width: 300px;
+}
+
+.reason {
+	font-size: 8px;
+}

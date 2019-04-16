@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+	<head>
+	    <link rel="stylesheet" type="text/css" href="custom.css">
+		<meta charset="utf-8">
+		<title>Midterm Practice</title>
+
+		<script>
+			var sizes = [12, 16, 20, 24, 32, 40, 64, 100];
+			var count = 0;
+
+			function insist() {
+				var container = document.getElementById("reasons");
+				var reasons = container.children;
+
+				for(i = 0; i < reasons.length; i++) {
+					reasons[i].style.cssText = "font-size: " + sizes[count] + "px";
+				}
+				count++;
+
+				if(count > 7) {
+					var bad = document.getElementById("bad");
+					bad.setAttribute("hidden", true);
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<p>This Ray will bring you back!</p>
+		<a href="index.html"><img class="smol" src="ray.png"></a>
+		<br><br>
+		<div id="reasons">
+			<p style="font-size:8px">Raymond is the smartest and took 15 APs</p>
+			<p style="font-size:8px">Raymond has a 3.82 GPA</p>
+			<p style="font-size:8px">Raymond was a certified lifeguard and is a super good swimmer</p>
+			<p style="font-size:8px">Raymond goes to NyU sTeRn</p>
+			<p style="font-size:8px">Raymond is the cutest in every way possible</p>
+			<p style="font-size:8px">Raymond is the softest material on Earth</p>
+			<p style="font-size:8px">Raymond smells like a nice nap in a cozy blanket</p>
+		</div>
+		<br>
+		<button id="bad" onclick="insist();">I am stupid and I disagree</button>
+	</body>
+</html>
+
+<script>
+</script>

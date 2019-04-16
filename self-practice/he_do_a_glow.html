@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+	<head>
+	    <link rel="stylesheet" type="text/css" href="custom.css">
+		<meta charset="utf-8">
+		<title>Midterm Practice</title>
+
+		<script>
+			var sayings = ["Hi!", "uwu", "I love you!", "I'm so cute!", "hewwo?"];
+
+			function clicked(){
+				ray = document.getElementById("ray");
+				if(ray.classList.contains("border"))
+					ray.classList.remove("border");
+				else
+					ray.classList.add("border");
+
+				random = Math.floor(Math.random() * 5);
+				document.getElementById("says").innerHTML = "Raymond says: " + sayings[random];
+			}
+
+			function mouseOn(){
+				ray = document.getElementById("ray");
+				ray.classList.add("glow");
+			}
+
+			function mouseOff() {
+				ray = document.getElementById("ray");
+				ray.classList.remove("glow");
+			}
+		</script>
+	</head>
+	<body>
+		<p>This Ray will bring you back!</p>
+		<a href="index.html"><img class="smol" src="ray.png"></a>
+		<br><br>
+		<img id="ray" onclick="clicked();" onmouseover="mouseOn();" onmouseout="mouseOff();" class="larg" src="ray2.jpg">
+		<br>
+		<p id="says">Raymond says: Hi!</p>
+	</body>
+</html>
+
+<script>
+</script>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+	<head>
+	    <link rel="stylesheet" type="text/css" href="custom.css">
+		<meta charset="utf-8">
+		<title>Midterm Practice</title>
+
+		<script>
+			function create(){
+				var newRay = document.createElement('img');
+				newRay.src="ray.png";
+				newRay.classList.add("smol");
+				body = document.getElementsByTagName("body")[0];
+				body.appendChild(newRay);
+			}
+
+			function destroy() {
+				body = document.getElementsByTagName("body")[0];
+				body.removeChild(body.lastElementChild);
+			}
+		</script>
+	</head>
+	<body>
+		<p>This Ray will bring you back!</p>
+		<a href="index.html"><img class="smol" src="ray.png"></a>
+		<br>
+		<p>The Infinite Ray- click for rays</p>
+		<button onclick="create()">
+			<img id="infinite" class="larg" src="ray0.jpg">
+		</button>
+		<p>Snek Ray- click to destroy rays</p>
+		<button onclick="destroy()">
+			<img id="snek" class="larg" src="ray4.jpg">
+		</button>
+		<br><br>
+	</body>
+</html>
+
+<script>
+</script>
