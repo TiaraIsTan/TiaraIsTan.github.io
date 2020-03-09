@@ -4,29 +4,54 @@
     <meta charset="utf-8">
     <title>Resume</title>
     <!--Desktop Stylesheet-->
-    <link rel="stylesheet" type="text/css" 
-      media="only screen and (min-width: 961px)" href="style.css">
-    <!--Mobile Stylesheet-->
-    <link rel="stylesheet" type="text/css" 
-      media="only screen and (max-width: 480px)" href="mobile.css">
-    <!--Tablet Stylesheet-->
-    <link rel="stylesheet" type="text/css" 
-      media="only screen and (min-width: 481px) and (max-width: 960px)" href="tablet.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <!--Prevent smartphones from scaling pages down-->
     <meta name="viewport" content="initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="triforce_icon.ico"/>
-    <link href="https://fonts.googleapis.com/css?family=Nova+Flat|Russo+One" rel="stylesheet"> 
+    <link rel="icon" type="image/x-icon" href="icon.ico"/>
+    <link href="https://fonts.googleapis.com/css?family=Nova+Flat|Russo+One|Press+Start+2P|Quantico" rel="stylesheet"> 
     <script src="jquery-3.3.1.min.js"></script>
   </head>
-  <body class="background bg1">
-    <div class="header" align="center">Resume</div>
-    <div id="centeredHeaders">
-      <a href="index.html" class="back resumeLinks white">Back to Main Page</a>
-      <a href="workExperience.html" class="back resumeLinks white">Work Experience</a>
-    </div>
+  <body class="sky bg">
+    <div class="resume-header" align="center">Resume</div>
+    <a href="index.html"><img class="back" src="back.gif"></a>
+    <a href="resumePrintable.html"><img class="print" src="print.gif"></a>
     <p><br></p>
-    <div>
-      <iframe src="resume.pdf" align="center" width="80%" height=700px></iframe>
+    <div class="left-window">
+      <p class="window-title">Google - Core Eng</p>
+      <p class="window-text"><b>L3 Software Engineer, March 2020 - Present</b></p>
+      <p class="window-text">Working on a new internal tool configs team.</p>
+      <p class="window-text">Learning how to code in Go and ramping up.</p>
+      <p class="window-text">To be updated</p>
+    </div>
+    <div class="right-window">
+      <p class="window-title">Google - Core Eng</p>
+      <p class="window-text"><b>Software Engineering Intern, May 2019 - Aug 2019</b></p>
+      <p class="window-text">Implemented logic to supply warnings to the front-end of an internal testing tool by analyzing test data.</p>
+      <p class="window-text">Developed an automated bug filing service associated with the internal testing tool that uses backend RPCs to gather the data needed to generate the inputs and file the bug.</p>
+      <p class="window-text">Created design documents for 2 of my projects and contributed to the design document for the 3rd.</p>
+    </div>
+    <div class="left-window">
+      <p class="window-title">Google - GSuite Infra</p>
+      <p class="window-text"><b>Engineering Practicum Intern, May 2018 - Aug 2018</b></p>
+      <p class="window-text">Implemented a Customer Support API using an internal microservices platform.</p>
+      <p class="window-text">Utilized an asynchronous Java framework to populate API with information from 12 different backend services.</p>
+      <p class="window-text">Provided authentication and authorization data through dynamic configuration.</p>
+      <p class="window-text">Wrote validators for all inputs to new API service.</p>
+    </div>
+    <div class="right-window">
+      <p class="window-title">Google - Shopping</p>
+      <p class="window-text"><b>Engineering Practicum Intern, May 2017 - Aug 2017</b></p>
+      <p class="window-text">Implemented front-end mobile UI changes including various methods of displaying data with differing priorities through HTML and JavaScript. Wrote integration tests, unit tests, and UI tests. Tracked the metrics of the UI change and wrote launch documentation.</p>
+      <p class="window-text">Provided data to the front-end and integrated it to back-end.</p>
+      <p class="window-text">Discovered and launched a fix for a pre-existing bug concerning logging metrics for a mobile feature.</p>
+    </div>
+    <div class="left-window">
+      <p class="window-title">Education</p>
+      <p class="window-text"><b>NYU, Sep 2016 - Dec 2019</b></p>
+      <p class="window-text">B.A. in Computer Science, Minors in Mathematics and Web Programming</p>
+      <p class="window-text">GPA: 3.62</p>
+      <p class="window-text">Studied at NYU Shanghai during Fall 2018.</p>
+      <p class="window-text">Was on e-board for Tech@NYU. Helped organize and run workshops/events.</p>
     </div>
   </body>
 </html>

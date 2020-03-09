@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hobbies</title>
+    <!--Desktop Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--Prevent smartphones from scaling pages down-->
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="icon.ico"/>
+    <link href="https://fonts.googleapis.com/css?family=Nova+Flat|Russo+One|Press+Start+2P|Quantico" rel="stylesheet"> 
+    <script>
+      function press1() {
+        open();
+        var a = document.getElementById("descTitle");
+        var b = document.getElementById("descSkill");
+        var c = document.getElementById("descSkillText");
+        var d = document.getElementById("descText");
+        a.textContent = "Baking";
+        b.src = "skill3.png";
+        c.textContent = "Intermediate";
+        d.textContent = "I bake fairly regularly. I can bake basic things like cakes, cookies, brownies and more advanced stuff like egg tarts and cream puffs. I can make mediocore macarons and crepe cakes. I've managed to traumatize myself by baking too many batches of mediocore macarons, so I tend not to eat or bake them anymore.";
+      }
+      function press2() {
+        open();
+        var a = document.getElementById("descTitle");
+        var b = document.getElementById("descSkill");
+        var c = document.getElementById("descSkillText");
+        var d = document.getElementById("descText");
+        a.textContent = "Video Games";
+        b.src = "skill4.png";
+        c.textContent = "Advanced";
+        d.textContent = "I chose a turnip because of its association with the Harvest Moon series. I used to be really into that series, but now Rune Factory is much better. While I do prefer more wholesome and chill games like Animal Crossing, I have played quite a bit of other genres. I wouldn't call myself a master of gaming, but I'm pretty good. (But I don't play Smash so don't even ask.)";
+      }
+      function press3() {
+        open();
+        var a = document.getElementById("descTitle");
+        var b = document.getElementById("descSkill");
+        var c = document.getElementById("descSkillText");
+        var d = document.getElementById("descText");
+        a.textContent = "Dancing";
+        b.src = "skill1.png";
+        c.textContent = "Beginner";
+        d.textContent = "I got into dancing a year or two ago and have been to have a few dance classes. I would call myself above average (and I mean the average of the world). I primarily attend hip hop dance classes, but I have also attended kpop dance classes.";
+      }
+      function press4() {
+        open();
+        var a = document.getElementById("descTitle");
+        var b = document.getElementById("descSkill");
+        var c = document.getElementById("descSkillText");
+        var d = document.getElementById("descText");
+        a.textContent = "Art";
+        b.src = "skill2.png";
+        c.textContent = "Amateur";
+        d.textContent = "I used to draw often back in high school. I'm currently trying to get back into it. I made all of the art on this website using Aseprite (pixel art editor on Steam). I need to practice drawing from references and coloring. I enjoy doing more cartoonish/anime-style art. I also like drawing clothing designs.";
+      }
+      function press5() {
+        open();
+        var a = document.getElementById("descTitle");
+        var b = document.getElementById("descSkill");
+        var c = document.getElementById("descSkillText");
+        var d = document.getElementById("descText");
+        a.textContent = "Music";
+        b.src = "skill2.png";
+        c.textContent = "Amateur";
+        d.textContent = "I enjoy singing and I'm currently learning to play the ukulele. I mostly use it as background music to my singing though. I'm not professionally trained or anything, but I do enjoy it and I'm not tone deaf. I can also sing some songs in Mandarin and Japanese.";
+      }
+      function press6() {
+        open();
+        var a = document.getElementById("descTitle");
+        var b = document.getElementById("descSkill");
+        var c = document.getElementById("descSkillText");
+        var d = document.getElementById("descText");
+        a.textContent = "Cooking";
+        b.src = "skill1.png";
+        c.textContent = "Beginner";
+        d.textContent = "I've been trying to get into cooking now that I'm a real adult. Sometimes it turns out well, sometimes not. I think the problem is that I follow the recipe too closely (because you have to do that in baking) and because I panic in high tension/limited time situations (which doesn't happen as much in baking). Meanwhile my boyfriend can somehow cook up something great just by 'following his heart.' :/";
+      }
+
+      function open() {
+        var a = document.getElementById("desc");
+        a.style.background = "url('holoOpen.gif')";
+      }
+    </script>
+  </head>
+  <body class="park bg">
+    <div class="resume-header" align="center">Hobbies</div>
+    <a href="index.html"><img class="back" src="back.gif"></a>
+    <div class="vending">
+      <div class="vend-button" id="vend1" onclick="press1()"><img src="button.png"></div>
+      <div class="vend-button" id="vend2" onclick="press2()"><img src="button.png"></div>
+      <div class="vend-button" id="vend3" onclick="press3()"><img src="button.png"></div>
+      <div class="vend-button" id="vend4" onclick="press4()"><img src="button.png"></div>
+      <div class="vend-button" id="vend5" onclick="press5()"><img src="button.png"></div>
+      <div class="vend-button" id="vend6" onclick="press6()"><img src="button.png"></div>
+      <div class="instructions">Press the button<br>below which hobby<br>you'd like to hear<br>about.</div>
+    </div>
+    <div id="desc">
+      <p id="descTitle"></p>
+      <img id="descSkill"><p id="descSkillText"></p>
+      <p id="descText"></p>
+    </div>
+  </body>
+</html>

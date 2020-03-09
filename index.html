@@ -4,22 +4,85 @@
     <meta charset="utf-8">
     <title>Tiara's Website</title>
     <!--Desktop Stylesheet-->
-    <link rel="stylesheet" type="text/css" 
-      media="only screen and (min-width: 961px)" href="style.css">
-    <!--Mobile Stylesheet-->
-    <link rel="stylesheet" type="text/css" 
-      media="only screen and (max-width: 480px)" href="mobile.css">
-    <!--Tablet Stylesheet-->
-    <link rel="stylesheet" type="text/css" 
-      media="only screen and (min-width: 481px) and (max-width: 960px)" href="tablet.css">
+    <link rel="stylesheet" type="text/css"  href="style.css">
     <!--Prevent smartphones from scaling pages down-->
     <meta name="viewport" content="initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="triforce_icon.ico"/>
-    <link href="https://fonts.googleapis.com/css?family=Nova+Flat|Russo+One" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="icon.ico"/>
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Josefin+Sans&display=swap" rel="stylesheet">
+
+    <script>
+      function hide() {
+        var y = document.getElementById("resume");
+        y.style.display = "none";
+
+        var z = document.getElementById("hobbies");
+        z.style.display = "none";
+
+        var y = document.getElementById("resume-arrow");
+        y.style.display = "none";
+
+        var z = document.getElementById("hobbies-arrow");
+        z.style.display = "none";
+      }
+
+      function start() {
+        var x = document.getElementById("start");
+        x.style.display = "none";
+
+        var y = document.getElementById("resume");
+        y.style.display = "block";
+
+        var z = document.getElementById("hobbies");
+        z.style.display = "block";
+
+        var a = document.getElementById("resume-arrow");
+        a.style.display = "inline-block";
+      }
+
+      function select() {
+        body = document.getElementsByTagName("body")[0];
+        body.firstElementChild.innerHTML = "Raymond Wang is the Best."
+      }
+
+      function moveArrow() {
+        var x = document.getElementById("resume-arrow");
+        var y = document.getElementById("hobbies-arrow");
+        if (y.style.display = "none") {
+          y.style.display = "inline";
+          x.style.display = "none";
+        } else {
+          y.style.display = "none";
+          x.style.display = "inline";
+        }
+      }
+
+      function moveUp () {
+        var x = document.getElementById("resume-arrow");
+        var y = document.getElementById("hobbies-arrow");
+        if (x.style.display = "none") {
+          y.style.display = "none";
+          x.style.display = "inline";
+        }
+      }
+
+      function moveDown () {
+        var x = document.getElementById("resume-arrow");
+        var y = document.getElementById("hobbies-arrow");
+        if (y.style.display = "none") {
+          y.style.display = "inline";
+          x.style.display = "none";
+        }
+      }
+    </script>
   </head>
-  <body class="background bg1">
-    <div><a class="header">Tiara Tan's Website</a></div>
-    <div><a class="largelink" href="aboutMe.html">About Me</a></div>
-    <div><a class="largelink" href="workExperience.html">Work Experience</a></div>
+  <body onload="hide()" class="beach bg">
+    <div class="header">Tiara Tan</div>
+    <!--<div><a class="largelink" href="aboutMe.html">About Me</a></div>
+    <div><a class="largelink" href="workExperience.html">Work Experience</a></div>-->
+    <div><p class="largelink" id="start" onclick="start()"><img class="arrow" src="crown.gif">Start</p></div>
+    <div>
+      <div><p class="largelink" id="resume" onmouseover="moveUp()"><img class="arrow" id="resume-arrow" src="crown.gif"><a href="resume.html">Resume</a></p></div>
+      <div><p class="largelink" id="hobbies" onmouseover="moveDown()"><img class="arrow" id="hobbies-arrow" src="crown.gif"><a href="hobbies.html">Hobbies</p></div>
+    </div>
   </body>
 </html>

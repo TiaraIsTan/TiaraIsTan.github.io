@@ -21,13 +21,6 @@ iframe {
 a {
   text-decoration: none;
 }
-.header {
-  color: rgb(200,200,255);
-  font-family: 'Russo One', sans-serif;
-  font-size: 40pt;
-  display: inline-block;
-  padding-top: 24px;
-}
 .white {
   color: rgb(255,255,255);
 }
@@ -36,15 +29,6 @@ a {
   font-family: 'Nova Flat', cursive;
   text-decoration: none;
   font-size: 16pt;
-}
-.largelink {
-  color: rgb(0,168,225);
-  font-family: 'Nova Flat', cursive;
-  text-decoration: none;
-  font-size: 24pt;
-  text-align: center;
-  padding: 20px 0px 0px 0px;
-  display: inline-block;
 }
 .linkcolor {
   color: rgb(255,255,255);
@@ -62,9 +46,6 @@ a {
 }
 .list {
   color: rgb(30,198,255);
-}
-.background {
-  background-size: cover;
 }
 .bg1 {
   background: url("cityNightResized.jpg");
@@ -101,4 +82,246 @@ a {
 }
 #centeredHeaders {
   text-align: center;
+}
+
+/* NEW STUFF -------------------------------------------*/
+
+.header {
+  color: #FFFFFF;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 40pt;
+  display: inline-block;
+  padding-top: 24px;
+  text-shadow: -2px 0 #00bdff, 0 2px #00bdff, 2px 0 #00bdff, 0 -2px #00bdff;
+}
+
+.bg {
+  background-size: cover;
+}
+
+.beach {
+  background: url("beach.gif");
+  background-size: cover;
+}
+
+.sky {
+  background: url("ResumeBGTall.gif");
+  background-size: cover;
+}
+
+.park {
+  background: url("Park.png");
+  background-size: cover;
+}
+
+.waves {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+}
+
+#start {
+  display: "block";
+}
+
+#resume {
+  display: "none";
+}
+
+#hobbies {
+  display: "none";
+}
+
+#resume-arrow {
+  display: "none";
+}
+
+#hobbies-arrow {
+  display: "none";
+}
+
+.arrow {
+  padding-right: 4px;
+  position: relative;
+}
+
+.largelink {
+  color: #00bdff;
+  font-family: 'Fredoka One', cursive;
+  text-decoration: none;
+  font-size: 24pt;
+  text-align: center;
+  z-index: 1;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
+
+.resume-header {
+  color: #FFFFFF;
+  font-size: 32pt;
+  display: inline-block;
+  padding-top: 24px;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.left-window {
+  height: 40vh;
+  width: 30vw;
+  margin-left: 17.5%;
+  background: url("Window-Blue.png");
+  background-repeat: no-repeat;
+  background-size: 30vw 40vh;
+}
+
+.right-window {
+  height: 40vh;
+  width: 30vw;
+  margin-left: 52.5%;
+  margin-right: 15%;
+  background: url("Window-Purple.png");
+  background-repeat: no-repeat;
+  background-size: 30vw 40vh;
+}
+
+.window-title {
+  padding-top: 0.5vh;
+  color: #1e0094;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2vh;
+}
+
+.window-text {
+  padding-top: 0.5vh;
+  color: #1e0094;
+  font-family: 'Quantico', sans-serif;
+  font-size: 2vh;
+  text-align: left;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+.back {
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.print {
+  display: inline-block;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+.vending {
+  position: absolute;
+  background: url("vending.gif");
+  height: 600px;
+  width: 400px;
+  top: 25vh;
+  left: 29vw;
+  right: 49vw;
+}
+
+#vend1 {
+  position: absolute;
+  top: 116px;
+  left: 75px;
+}
+
+#vend2 {
+  position: absolute;
+  top: 116px;
+  left: 183px;
+}
+
+#vend3 {
+  position: absolute;
+  top: 116px;
+  left: 291px;
+}
+
+#vend4 {
+  position: absolute;
+  top: 216px;
+  left: 75px;
+}
+
+#vend5 {
+  position: absolute;
+  top: 216px;
+  left: 183px;
+}
+
+#vend6 {
+  position: absolute;
+  top: 216px;
+  left: 291px;
+}
+
+.instructions {
+  color: #FFFFFF;
+  font-family: 'Quantico', sans-serif;
+  font-size: 20px;
+  position: absolute;
+  top: 285px;
+  left: 40px;
+  text-align: left;
+}
+
+#desc {
+  position: absolute;
+  background: url("holoClosed.png");
+  height: 600px;
+  width: 400px;
+  top: 25vh;
+  left: 51vw;
+  right: 71vw;
+}
+
+#descTitle {
+  color: #FFFFFF;
+  text-shadow: -2px 0 #00bdff, 0 2px #00bdff, 2px 0 #00bdff, 0 -2px #00bdff;
+  font-family: 'Quantico', sans-serif;
+  font-size: 32px;
+  position: absolute;
+  top: 1.5vh;
+  text-align: left;
+  left: 2vw;
+}
+
+#descSkill {
+  background: url("skill1.png");
+  position: absolute;
+  top: 11vh;
+  text-align: left;
+  left: 2vw;
+}
+
+#descSkillText {
+  color: #FFFFFF;
+  text-shadow: -2px 0 #00bdff, 0 2px #00bdff, 2px 0 #00bdff, 0 -2px #00bdff;
+  font-family: 'Quantico', sans-serif;
+  font-size: 24px;
+  position: absolute;
+  top: 7.25vh;
+  text-align: left;
+  left: 8vw;
+}
+
+#descText {
+  position: absolute;
+  top: 14vh;
+  text-align: left;
+  left: 2vw;
+  right: 3vw;
+  font-family: 'Quantico', sans-serif;
+  font-size: 20px;
+  color: #FFFFFF;
 }
