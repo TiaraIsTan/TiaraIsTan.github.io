@@ -91,7 +91,7 @@ a, a:visited, a:hover, a:active {
   font-size: 32pt;
   display: inline-block;
   padding-top: 24px;
-  margin-left: 32px;
+  margin-left: 40px;
   font-family: 'Press Start 2P', cursive;
 }
 
@@ -140,6 +140,7 @@ a, a:visited, a:hover, a:active {
   display: inline-block;
   position: absolute;
   top: 24px;
+  margin-left: 32px;
   right: 24px;
   height: 4vw;
   padding-top: 3vh;
