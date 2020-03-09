@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Josefin+Sans&display=swap" rel="stylesheet">
 
     <script>
+      window.onpaint = hide();
+
       function hide() {
         var y = document.getElementById("resume");
         y.style.display = "none";
@@ -75,7 +77,7 @@
       }
     </script>
   </head>
-  <body onload="hide()" class="beach bg">
+  <body class="beach bg">
     <div class="header">Tiara Tan</div>
     <!--<div><a class="largelink" href="aboutMe.html">About Me</a></div>
     <div><a class="largelink" href="workExperience.html">Work Experience</a></div>-->
