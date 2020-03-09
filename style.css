@@ -89,7 +89,7 @@ a {
 .header {
   color: #FFFFFF;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 40pt;
+  font-size: 64px;
   display: inline-block;
   padding-top: 24px;
   text-shadow: -2px 0 #00bdff, 0 2px #00bdff, 2px 0 #00bdff, 0 -2px #00bdff;
@@ -151,7 +151,7 @@ a {
   color: #00bdff;
   font-family: 'Fredoka One', cursive;
   text-decoration: none;
-  font-size: 24pt;
+  font-size: 40px;
   text-align: center;
   z-index: 1;
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
