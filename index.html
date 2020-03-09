@@ -11,8 +11,6 @@
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Josefin+Sans&display=swap" rel="stylesheet">
 
     <script>
-      window.onpaint = hide();
-
       function hide() {
         var y = document.getElementById("resume");
         y.style.display = "none";
@@ -77,7 +75,7 @@
       }
     </script>
   </head>
-  <body class="beach bg">
+  <body onload="hide()" class="beach bg">
     <div class="header">Tiara Tan</div>
     <!--<div><a class="largelink" href="aboutMe.html">About Me</a></div>
     <div><a class="largelink" href="workExperience.html">Work Experience</a></div>-->
@@ -86,5 +84,6 @@
       <div><p class="largelink" id="resume" onmouseover="moveUp()"><img class="arrow" id="resume-arrow" src="crown.gif"><a href="resume.html">Resume</a></p></div>
       <div><p class="largelink" id="hobbies" onmouseover="moveDown()"><img class="arrow" id="hobbies-arrow" src="crown.gif"><a href="hobbies.html">Hobbies</p></div>
     </div>
+    <script type="text/javascript">hide();</script>
   </body>
 </html>
